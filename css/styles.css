@@ -23,6 +23,8 @@
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -38,6 +40,14 @@ body {
 .page-header {
   background-color: var(--text-color-white);
   border-bottom: 1px solid var(--block-border-line);
+}
+
+.conteiner{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*header logo*/
@@ -82,9 +92,13 @@ body {
 /*hero*/
 .hero {
   background-color: var(--bg-color-hero);
+
+  text-align: center;
 }
 
 .hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -92,6 +106,15 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-white);
+}
+
+/*button*/
+.button {
+  color: var(--title-text-color);
+  background-color: var(--bg-color-light);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 /*hero button*/
@@ -103,13 +126,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
-
-/*button*/
-.button {
-  color: var(--title-text-color);
-  background-color: var(--bg-color-light);
-  cursor: pointer;
+  padding: 10px 32px;
 }
 
 .button.primary {
@@ -117,12 +134,14 @@ body {
   background-color: var(--accent-color);
 }
 
+/*button filter page portfolio*/
 .filter .button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 
 .filter .button:hover,
@@ -133,6 +152,8 @@ body {
 
 /*section*/
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -142,6 +163,8 @@ body {
 
 /*features*/
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -151,6 +174,7 @@ body {
 
 .feature-list .text {
   line-height: 1.71;
+  margin-top: 0;
 }
 
 /*our team*/
