@@ -237,7 +237,7 @@ body {
 .page-footer .logo {
   color: var(--text-color-white);
   margin-bottom: 20px;
-  display: block;
+  display: inline-block;
 }
 
 .contact-footer .text,
