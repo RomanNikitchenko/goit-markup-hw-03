@@ -92,8 +92,9 @@ body {
 /*hero*/
 .hero {
   background-color: var(--bg-color-hero);
-
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .hero-title {
@@ -102,7 +103,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-white);
@@ -124,7 +124,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
 }
@@ -151,6 +150,11 @@ body {
 }
 
 /*section*/
+
+.section {
+  margin-bottom: 94px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -175,15 +179,20 @@ body {
 .feature-list .text {
   line-height: 1.71;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*our team*/
 .team {
   background-color: var(--bg-color-light);
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list .team-member {
   background-color: var(--bg-color-white);
+  text-align: center;
 }
 
 .team-list .title {
@@ -220,22 +229,30 @@ body {
 .page-footer {
   background-color: var(--bg-color-hero);
   color: var(--text-color-white);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*logo footer*/
 .page-footer .logo {
   color: var(--text-color-white);
+  margin-bottom: 20px;
+  display: block;
 }
 
 .contact-footer .text,
 .contact-footer .link {
   font-style: normal;
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-footer .link {
   color: var(--text-color-white-a);
   text-decoration: none;
+  display: block;
+  margin-top: 9px;
 }
 
 .contact-footer .link:hover,
