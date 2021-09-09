@@ -20,6 +20,7 @@
   --bg-color-light: #f5f4fa;
   --bg-color-hero: #2f303a;
   --block-border-line: #ececec;
+  --card-border-color: #eeeeee;
 }
 
 .list {
@@ -136,6 +137,10 @@ body {
 }
 
 /*button filter page portfolio*/
+.filter.list {
+  margin-bottom: 50px;
+}
+
 .filter .button {
   font-family: inherit;
   font-weight: 500;
@@ -152,7 +157,6 @@ body {
 }
 
 /*section*/
-
 .section {
   margin-bottom: 94px;
 }
@@ -226,6 +230,15 @@ body {
 /*page portfolio our work*/
 .works-list .works-categories {
   background-color: var(--bg-color-white);
+  max-width: 370px;
+  border: 1px solid var(--card-border-color);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.works-categories .image {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .works-list .title {
@@ -234,11 +247,16 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin: 0 0 4px;
+  padding: 0 24px;
 }
 
 .works-list .text {
   font-size: 16px;
   line-height: 1.87;
+  margin-bottom: 0;
+  padding: 0 24px;
+  margin: 0;
 }
 
 /*footer*/
