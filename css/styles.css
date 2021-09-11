@@ -138,7 +138,13 @@ body {
 
 /*button filter page portfolio*/
 .filter.list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
+}
+
+.filter .items:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter .button {
@@ -233,24 +239,28 @@ body {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #757575;
 }
 
 .works-list > .works-categories:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
 
+.works-list > .works-categories:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+
 .works-list .works-categories {
   background-color: var(--bg-color-white);
-  max-width: 370px;
-  border: 1px solid var(--card-border-color);
-  padding-bottom: 20px;
 }
 
 .works-categories .image {
   display: block;
-  margin-bottom: 20px;
+}
+
+.works-categories .bottom-description {
+  border: solid 1px var(--card-border-color);
+  border-top: 0;
+  padding: 20px 24px;
 }
 
 .works-list .title {
@@ -260,14 +270,11 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   margin: 0 0 4px;
-  padding: 0 24px;
 }
 
 .works-list .text {
   font-size: 16px;
   line-height: 1.87;
-  margin-bottom: 0;
-  padding: 0 24px;
   margin: 0;
 }
 
