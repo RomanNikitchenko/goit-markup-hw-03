@@ -25,16 +25,16 @@
                 </a>
 
                 <ul class="site-nav list">
-                    <li><a href="./index.html" class="link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
 
             <!--контакты хедер-->
             <ul class="contact-nav list">
-                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -42,8 +42,10 @@
     <main>
         <!--Шапка-->
         <section class="section hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+            <div class="conteiner">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button primary">Заказать услугу</button>
+            </div>
         </section>
 
         <!--Особенности-->
@@ -99,33 +101,51 @@
 
         <!-- Наша команда -->
         <section class="section team">
+
             <div class="conteiner">
+
                 <h2 class="section-title">Наша команда</h2>
 
                 <ul class="team-list list">
+
                     <li class="team-member">
                         <img class="image" src="./images/imgteam.jpg" alt="Дизайнер продуктов" width="270">
-                        <h3 class="title">Игорь Демьяненко</h3>
-                        <p class="text">Product Designer</p>
+                        <div class="bottom-description">
+                            <h3 class="title">Игорь Демьяненко</h3>
+                            <p class="text">Product Designer</p>
+                        </div>
                     </li>
+
                     <li class="team-member">
                         <img class="image" src="./images/imgteam1.jpg" alt="Фронтенд-разработчик" width="270">
-                        <h3 class="title">Ольга Репина</h3>
-                        <p class="text">Frontend Developer</p>
+                        <div class="bottom-description">
+                            <h3 class="title">Ольга Репина</h3>
+                            <p class="text">Frontend Developer</p>
+                        </div>
                     </li>
+
                     <li class="team-member">
                         <img class="image" src="./images/imgteam2.jpg" alt="Маркетинг" width="270">
-                        <h3 class="title">Николай Тарасов</h3>
-                        <p class="text">Marketing</p>
+                        <div class="bottom-description">
+                            <h3 class="title">Николай Тарасов</h3>
+                            <p class="text">Marketing</p>
+                        </div>
                     </li>
+
                     <li class="team-member">
                         <img class="image" src="./images/imgteam3.jpg" alt="дизайнер интерфейсов" width="270">
-                        <h3 class="title">Михаил Ермаков</h3>
-                        <p class="text">UI Designer</p>
+                        <div class="bottom-description">
+                            <h3 class="title">Михаил Ермаков</h3>
+                            <p class="text">UI Designer</p>
+                        </div>
                     </li>
+
                 </ul>
+
             </div>
+
         </section>
+
     </main>
 
     <!--подвал-->

@@ -54,20 +54,21 @@ p {
   list-style: none;
 }
 
-/*header*/
-.page-header {
-  background-color: var(--text-color-white);
-  border-bottom: 1px solid var(--block-border-line);
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
+/* section container */
 .conteiner {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*header*/
+.page-header {
+  background-color: var(--text-color-white);
+  border-bottom: 1px solid var(--block-border-line);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /*header logo*/
@@ -85,6 +86,14 @@ p {
 }
 
 /*site-nav and contact-nav*/
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link,
 .contact-nav .link {
   font-weight: 500;
@@ -109,6 +118,7 @@ p {
   color: var(--accent-color);
 }
 
+/* main */
 /*hero*/
 .section.hero {
   background-color: var(--bg-color-hero);
@@ -226,30 +236,32 @@ p {
   background-color: var(--bg-color-light);
 }
 
+.team-list {
+  display: flex;
+  margin-left: -30px;
+}
+
 .team-list .team-member {
   background-color: var(--bg-color-white);
   text-align: center;
-  max-width: 270px;
-  padding-bottom: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
-.team-list .image {
-  display: block;
-  margin-bottom: 30px;
+.team-member .bottom-description {
+  padding: 30px 0;
 }
 
-.team-list .title {
+.bottom-description .title {
   font-weight: 500;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
-.team-list .title,
-.team-list .text {
+.bottom-description .title,
+.bottom-description .text {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 0;
 }
 
 /*page portfolio our work*/
