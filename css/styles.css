@@ -33,7 +33,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -219,7 +219,14 @@ p {
 }
 
 /*features*/
+.feature-list {
+  display: flex;
+  margin-left: -30px;
+}
+
 .feature-list .item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .feature-list .title {
@@ -238,6 +245,16 @@ p {
 /* skills */
 .section.skills {
   padding-top: 0;
+}
+
+.skills .skills-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.skills-list .item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 /*our team*/
@@ -306,7 +323,6 @@ p {
 .works-list .text {
   font-size: 16px;
   line-height: 1.87;
-  margin: 0;
 }
 
 /*footer*/
@@ -322,7 +338,6 @@ p {
   color: var(--text-color-white);
   margin-bottom: 20px;
   display: inline-block;
-  margin-right: 0;
 }
 
 .page-footer .contact-footer {
@@ -333,8 +348,6 @@ p {
 .contact-footer .link {
   font-style: normal;
   line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 0;
   display: block;
 }
 
