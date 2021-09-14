@@ -71,8 +71,18 @@ p {
   padding-bottom: 24px;
 }
 
+.page-header .conteiner,
+.conteiner .main-nav,
+.main-nav .site-nav,
+.conteiner .contact-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /*header logo*/
 .logo {
+  margin-right: 93px;
   color: var(--text-color-blac);
   font-family: Raleway, cursive;
   font-weight: bold;
@@ -86,21 +96,24 @@ p {
 }
 
 /*site-nav and contact-nav*/
-.site-nav {
-  display: flex;
+.conteiner .contact-nav {
+  margin-left: auto;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .item:not(:last-child),
+.contact-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-nav .link,
 .contact-nav .link {
+  display: block;
+
+  color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--title-text-color);
 }
 
 .site-nav .link.current {
@@ -206,8 +219,10 @@ p {
 }
 
 /*features*/
+.feature-list .item {
+}
+
 .feature-list .title {
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -218,17 +233,11 @@ p {
 
 .feature-list .text {
   line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* skills */
 .section.skills {
   padding-top: 0;
-}
-
-.skills-list .image {
-  display: block;
 }
 
 /*our team*/
@@ -313,6 +322,11 @@ p {
   color: var(--text-color-white);
   margin-bottom: 20px;
   display: inline-block;
+  margin-right: 0;
+}
+
+.page-footer .contact-footer {
+  width: 230px;
 }
 
 .contact-footer .text,
@@ -321,12 +335,12 @@ p {
   line-height: 1.71;
   margin-top: 0;
   margin-bottom: 0;
+  display: block;
 }
 
 .contact-footer .link {
   color: var(--text-color-white-a);
   text-decoration: none;
-  display: block;
   margin-top: 9px;
 }
 
