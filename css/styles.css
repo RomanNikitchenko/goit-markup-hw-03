@@ -141,7 +141,8 @@ p {
 }
 
 .hero .hero-title {
-  margin-top: 0;
+  max-width: 696px;
+  margin: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -216,6 +217,12 @@ p {
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
+}
+
+/* hidden headers */
+.section-title.not-displaye {
+  visibility: hidden;
+  margin-bottom: -41.25px;
 }
 
 /*features*/
@@ -337,6 +344,7 @@ p {
 .page-footer .logo {
   color: var(--text-color-white);
   margin-bottom: 20px;
+  margin-right: 0;
   display: inline-block;
 }
 
